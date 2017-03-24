@@ -13,7 +13,7 @@
 # limitations under the License.
 
 # Platform path
-PLATFORM_COMMON_PATH := device/sony/tone
+PLATFORM_COMMON_PATH := device/sony/tone-common
 
 TARGET_BOARD_PLATFORM := msm8996
 
@@ -91,4 +91,4 @@ TARGET_SYSTEM_PROP += $(PLATFORM_COMMON_PATH)/system.prop
 # SELinux
 BOARD_SEPOLICY_DIRS += $(PLATFORM_COMMON_PATH)/sepolicy
 
-include device/sony/common/CommonConfig.mk
+include device/sony/common-msm8996/CommonConfigOmni.mk
