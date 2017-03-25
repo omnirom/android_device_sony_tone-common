@@ -23,6 +23,6 @@ DEVICE_PACKAGE_OVERLAYS += \
     $(PLATFORM_COMMON_PATH)/overlay
 
 # Snapdragon Camera
-PRODUCT_PACKAGES += \
-    SnapdragonCamera
+#PRODUCT_PACKAGES += \
+#    SnapdragonCamera
 
