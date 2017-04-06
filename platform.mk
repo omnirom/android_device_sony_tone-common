@@ -15,7 +15,7 @@
 # Platform path
 PLATFORM_COMMON_PATH := device/sony/tone-common
 
-$(call inherit-product, device/sony/common-msm8996/common_omni.mk)
+$(call inherit-product, device/sony/common/common_omni.mk)
 $(call inherit-product, $(SRC_TARGET_DIR)/product/core_64_bit.mk)
 $(call inherit-product, hardware/broadcom/wlan/bcmdhd/config/config-bcm.mk)
 

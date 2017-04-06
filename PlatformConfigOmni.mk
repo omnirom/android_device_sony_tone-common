@@ -13,3 +13,5 @@
 # limitations under the License.
 
 include device/sony/tone-common/PlatformConfig.mk
+
+PRODUCT_VENDOR_KERNEL_HEADERS := device/sony/tone-common/kernel-headers
