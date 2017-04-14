@@ -15,3 +15,5 @@
 include device/sony/tone-common/PlatformConfig.mk
 
 PRODUCT_VENDOR_KERNEL_HEADERS := device/sony/tone-common/kernel-headers
+
+BOARD_HAVE_FPC_SYSFS := "/sys/devices/soc/fpc1145_device/"
