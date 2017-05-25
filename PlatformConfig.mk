@@ -16,6 +16,7 @@
 PLATFORM_COMMON_PATH := device/sony/tone-common
 
 TARGET_BOARD_PLATFORM := msm8996
+TARGET_KERNEL_VERSION := 3.18
 
 TARGET_ARCH := arm64
 TARGET_ARCH_VARIANT := armv8-a
@@ -78,5 +79,9 @@ TARGET_PER_MGR_ENABLED := true
 
 # SELinux
 BOARD_SEPOLICY_DIRS += $(PLATFORM_COMMON_PATH)/sepolicy
+
+# Display
+NUM_FRAMEBUFFER_SURFACE_BUFFERS := 3
+TARGET_USES_HWC2 := true
 
 include device/sony/common/CommonConfigOmni.mk
