@@ -12,8 +12,12 @@
 # See the License for the specific language governing permissions and
 # limitations under the License.
 
-include device/sony/tone-common/PlatformConfig.mk
 
+# Disable dex-preoptimization
+WITH_DEXPREOPT := false
+
+# Kernel headers
 PRODUCT_VENDOR_KERNEL_HEADERS := device/sony/tone-common/kernel-headers
 
-BOARD_HAVE_FPC_SYSFS := "/sys/devices/soc/fpc1145_device/"
+# Upstream config
+include device/sony/tone-common/PlatformConfig.mk
