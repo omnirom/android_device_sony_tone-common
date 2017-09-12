@@ -13,7 +13,7 @@
 # limitations under the License.
 
 # Platform path
-PLATFORM_COMMON_PATH := device/sony/tone
+PLATFORM_COMMON_PATH := device/sony/tone-common
 
 $(call inherit-product, device/sony/common/common.mk)
 $(call inherit-product, $(SRC_TARGET_DIR)/product/core_64_bit.mk)
@@ -143,3 +143,6 @@ PRODUCT_PROPERTY_OVERRIDES += \
 # USB controller setup
 PRODUCT_PROPERTY_OVERRIDES += \
     sys.usb.controller=6a00000.dwc3
+
+$(call inherit-product, device/sony/common/omni.mk)
+$(call inherit-product, $(PLATFORM_COMMON_PATH)/recovery/twrp.mk)
