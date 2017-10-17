@@ -144,5 +144,10 @@ PRODUCT_PROPERTY_OVERRIDES += \
 PRODUCT_PROPERTY_OVERRIDES += \
     sys.usb.controller=6a00000.dwc3
 
+# HWC2
+PRODUCT_PROPERTY_OVERRIDES += \
+    debug.sf.latch_unsignaled=1 \
+    debug.sf.enable_hwc_vds=1
+
 $(call inherit-product, device/sony/common/omni.mk)
 $(call inherit-product, $(PLATFORM_COMMON_PATH)/recovery/twrp.mk)
