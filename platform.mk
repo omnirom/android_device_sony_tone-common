@@ -139,7 +139,8 @@ PRODUCT_PROPERTY_OVERRIDES += \
 
 # USB controller setup
 PRODUCT_PROPERTY_OVERRIDES += \
-    sys.usb.controller=6a00000.dwc3
+    sys.usb.controller=6a00000.dwc3 \
+    sys.usb.rndis.func.name=rndis_bam
 
 $(call inherit-product, device/sony/common/omni.mk)
 $(call inherit-product, $(PLATFORM_COMMON_PATH)/recovery/twrp.mk)
