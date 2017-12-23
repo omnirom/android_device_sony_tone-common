@@ -8,3 +8,6 @@ tone devices:
     Xperia X Performance ................ Dora
     Xperia XZ ........................... Kagura
     Xperia XZs .......................... Keyaki
+
+Build instructions
+https://developer.sony.com/develop/open-devices/guides/aosp-build-instructions/
