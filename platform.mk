@@ -13,7 +13,7 @@
 # limitations under the License.
 
 # Platform path
-PLATFORM_COMMON_PATH := device/sony/tone
+PLATFORM_COMMON_PATH := device/sony/tone-common
 
 $(call inherit-product, device/sony/common/common.mk)
 $(call inherit-product, $(SRC_TARGET_DIR)/product/core_64_bit.mk)
@@ -159,7 +159,3 @@ PRODUCT_PROPERTY_OVERRIDES += \
 # Force camera API
 PRODUCT_PROPERTY_OVERRIDES += \
     camera2.portability.force_api=2
-
-# setup dm-verity configs.
-PRODUCT_SYSTEM_VERITY_PARTITION := /dev/block/platform/soc/7464900.sdhci/by-name/system
-$(call inherit-product, build/target/product/verity.mk)
