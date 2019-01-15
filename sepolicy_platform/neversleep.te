@@ -1,0 +1,13 @@
+# HACK: neversleep.sh: Little helper script to set default neversleep option at boot
+type neversleep, domain;
+type neversleep_exec, exec_type, vendor_file_type, file_type;
+
+init_daemon_domain(neversleep)
+
+set_prop(neversleep, vendor_neversleep_prop)
+
+allow neversleep {
+    vendor_file
+    vendor_shell_exec
+    vendor_toolbox_exec
+}:file rx_file_perms;

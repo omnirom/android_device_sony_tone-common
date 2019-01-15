@@ -1,0 +1,2 @@
+# HACK: Write to /sys/power/wake_lock and wake_unlock for neversleep
+allow vendor_init self:capability2 block_suspend;

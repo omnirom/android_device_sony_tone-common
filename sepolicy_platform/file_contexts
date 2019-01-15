@@ -51,3 +51,6 @@
 /dev/block/bootdevice/by-name/oem                              u:object_r:system_block_device:s0
 
 /dev/block/zram0                                               u:object_r:swap_block_device:s0
+
+# HACK: neversleep.sh: Little helper script to set default neversleep option at boot
+/(system/vendor|vendor)/bin/neversleep\.sh         u:object_r:neversleep_exec:s0

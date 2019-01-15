@@ -1,0 +1,2 @@
+# HACK: Allow disabling deep sleep("neversleep") in ExtendedSettings
+set_prop(system_app, vendor_neversleep_prop)

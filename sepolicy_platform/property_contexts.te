@@ -1,0 +1,3 @@
+# HACK: neversleep prop
+persist.vendor.neversleep      u:object_r:vendor_neversleep_prop:s0
+persist.vendor.neversleep.     u:object_r:vendor_neversleep_prop:s0

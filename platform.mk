@@ -75,6 +75,10 @@ PRODUCT_PACKAGES += \
     init.tone.pwr \
     ueventd
 
+# HACK: Utility to disable deep sleep
+PRODUCT_PACKAGES += \
+    neversleep.sh
+
 # Audio
 PRODUCT_PACKAGES += \
     audio.primary.msm8996
