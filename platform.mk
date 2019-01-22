@@ -159,3 +159,6 @@ PRODUCT_PROPERTY_OVERRIDES += \
 PRODUCT_PROPERTY_OVERRIDES += \
     ro.wifi.addr_path=/sys/devices/platform/soc/soc:bcmdhd_wlan/macaddr
 
+# HACK: Set a default value for the neversleep property
+PRODUCT_PROPERTY_OVERRIDES += \
+    vendor.neversleep.default=true
