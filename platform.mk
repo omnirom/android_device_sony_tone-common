@@ -22,6 +22,7 @@ $(call inherit-product, $(PLATFORM_COMMON_PATH)/recovery/twrp.mk)
 
 SOMC_PLATFORM := tone
 SOMC_KERNEL_VERSION := 4.9
+KERNEL_PATH := kernel/sony/msm-$(SOMC_KERNEL_VERSION)
 
 SONY_ROOT := $(PLATFORM_COMMON_PATH)/rootdir
 
